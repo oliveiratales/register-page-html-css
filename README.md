@@ -1,10 +1,10 @@
 # Página de Registro
 
 **PT-BR:**
-Página de registro responsiva de uma comunidade de leitores fictícia, desenvolvida utilizando HTML e CSS.
+Página de registro responsiva de uma comunidade de leitores fictícia, Sua Leitura, desenvolvida utilizando HTML e CSS.
 
 **EN:**
-Responsive registration page of a fictitious reader community, developed using HTML and CSS.
+Responsive registration page of a fictitious reader community, "Sua Leitura", developed using HTML and CSS.
 
 # Layout 
 
