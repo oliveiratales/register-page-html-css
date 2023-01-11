@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&display=swap");
+/* Configurações principais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #00bfa6, #92eadb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0 40px 20px 40px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.right-side img {
+  padding: 40px;
+  width: 32rem;
+}
+
+/* Configuração do cabeçalho do formulário */
+.header-form h1 {
+  margin: 35px 0 15px 0;
+  font-weight: 500;
+}
+.header-form h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #00BFA6;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+.header-form h6 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Configuração do corpo do formulário */
+.form-body {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+.form-item input[type=text],
+.form-item input[type=password],
+.form-item input[type=tel] {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1098039216);
+  font-size: 0.8rem;
+}
+.form-item input[type=text]:hover,
+.form-item input[type=password]:hover,
+.form-item input[type=tel]:hover {
+  background-color: #f2f2f2;
+}
+.form-item input[type=text]:focus-visible,
+.form-item input[type=password]:focus-visible,
+.form-item input[type=tel]:focus-visible {
+  outline: 1px solid #00BFA6;
+}
+.form-item label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #000;
+}
+.form-item label placeholder {
+  color: rgba(0, 0, 0, 0.7450980392);
+}
+
+.input-gender {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0 0.5rem;
+}
+.input-gender input {
+  margin-right: 0.35rem;
+}
+.input-gender label {
+  font-size: 0.81rem;
+  font-weight: 400;
+  color: #000;
+}
+.input-gender .gender-title {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.register-button {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  background-color: #00BFA6;
+  padding: 0.62rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.register-button:hover {
+  opacity: 0.7;
+}
+.register-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .container {
+    grid-template-columns: auto;
+  }
+  .right-side {
+    display: none;
+  }
+  .input-gender {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .right-side img {
+    padding: 40px;
+    width: 22rem;
+  }
+  .input-gender {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-gender .gender-title {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .right-side img {
+    padding: 40px;
+    width: 26rem;
+  }
+}/*# sourceMappingURL=style.css.map */
