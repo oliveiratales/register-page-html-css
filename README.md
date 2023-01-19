@@ -1,4 +1,4 @@
-# Página de Registro - Sua Leitura
+# Página de Registro
 
 **PT-BR:**
 Página de registro responsiva de uma comunidade de leitores fictícia, Sua Leitura, desenvolvida utilizando HTML e CSS.
